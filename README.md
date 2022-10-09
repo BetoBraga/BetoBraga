@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Roberto Braga</h1>
-<h3 align="center">A passionate backend developer and data scientist from Brazil</h3>
+<h3 align="center">A passionate Backend Developer and Data Scientist from Brazil</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=betobraga&label=Profile%20views&color=0e75b6&style=flat" alt="betobraga" /> </p>
 
@@ -13,7 +13,7 @@
 
 - 📫 Reach me at **roberto@absolemtech.com.br**
 
-- ⚡ Fun fact **I love chess, philosophy and laws**
+- ⚡ Fun fact -> **I love chess, philosophy and laws**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
