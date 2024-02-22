@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently working on **REHAGRO**
 
-- 🌱 I’m currently learning **ports and adapters abd clean architecture**
+- 🌱 I’m currently learning **ports and adapters and clean architecture**
 
 - 👯 I’m looking to collaborate on **agribusiness and health researchs**
 
