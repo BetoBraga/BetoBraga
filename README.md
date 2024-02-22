@@ -5,15 +5,13 @@
 
 - 🔭 I’m currently working on **REHAGRO**
 
-- 🌱 I’m currently learning **django, tensorflow and streamlit**
+- 🌱 I’m currently learning **ports and adapters abd clean architecture**
 
 - 👯 I’m looking to collaborate on **agribusiness and health researchs**
 
-- 💬 Ask me about **python, APIs and selenium**
+- 💬 Ask me about **django, laravel and machine learning**
 
-- 📫 Reach me at **roberto@absolemtech.com.br**
-
-- ⚡ Fun fact -> **I love chess, philosophy and laws**
+- ⚡ Fun fact -> **I love chess, philosophy, poker and laws**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
