@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=betobraga&label=Profile%20views&color=0e75b6&style=flat" alt="betobraga" /> </p>
 
-- 🔭 I’m currently working at **REHAGRO**
+- 🔭 I’m currently working in **REHAGRO**
 
 - 🌱 I’m currently learning **ports and adapters and clean architecture**
 
