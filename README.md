@@ -3,11 +3,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=betobraga&label=Profile%20views&color=0e75b6&style=flat" alt="betobraga" /> </p>
 
-- 🔭 I’m currently working in **REHAGRO**
+- 🌱 I’m currently learning **AI Agents**
 
-- 🌱 I’m currently learning **ports and adapters and clean architecture**
-
-- 👯 I’m looking to collaborate on **agribusiness and health researchs**
+- 👯 I’m looking to collaborate on **deep learning projects**
 
 - 💬 Ask me about **django, laravel and machine learning**
 
