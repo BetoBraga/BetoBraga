@@ -15,7 +15,7 @@
 
 ## 🔧 Current Roles
 
-- **Application Efficiency Specialist** @ [Cubic Telecom](https://www.cubictelecom.com/)\
+- **Application Support Engineer** @ [Cubic Telecom](https://www.cubictelecom.com/)\
   *Ensuring operational efficiency of critical business applications*
 
 - **Software Engineer** @ [JLCP Tecnologia](https://www.jlcp.com.br/)\
