@@ -18,9 +18,6 @@
 - **Application Support Engineer** @ [Cubic Telecom](https://www.cubictelecom.com/)\
   *Ensuring operational efficiency of critical business applications*
 
-- **Software Engineer** @ [JLCP Tecnologia](https://www.jlcp.com.br/)\
-  *Creating advanced applications and solutions tailored to enhance business observability.*
-
 
 ## 📈 Key Skills
 
