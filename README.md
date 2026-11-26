@@ -1,34 +1,53 @@
 # Roberto Braga
 
+<img src="assets/rb-home.svg" width="900" alt="Roberto Braga's personal index. An indigo wireframe aperture beside the motto: Good software gives people a way to disagree.">
+
 **Applied AI & Automation Engineer · Cubic³ · Brazil**
 
-> Good software gives people a way to disagree.
+[01 / Research](#research) · [02 / Project index](#project-index) · [03 / Field notes](#field-notes)
 
-I work on model evaluation and service automation. What I want from an AI system is simple: show me what changed, give me something I can test, and let me stop it when the evidence isn't there.
+I build systems that leave people enough evidence to tell them they're wrong. In practice that means testing what changed, making retries inspectable, and leaving a way to stop when the evidence isn't there.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/evidence-register-dark.svg">
-  <img width="920" src="assets/evidence-register-light.svg" alt="Stochastic Provenance evidence register: 12,288 of 12,288 matched token decisions in semantic tests; 2.04 times speedup in one Qwen case; 0.59 times in a decode-heavy Phi case.">
-</picture>
-
-## Selected work
+## Research
 
 ### Stochastic Provenance
 
-If a model reads the same prompt 32 times to give you 32 answers, which work can you skip? You can read it once. The trick is making sure each answer still gets its own random draws.
+If a model reads the same prompt 32 times to give you 32 answers, which work can you skip? You can process the prompt once. The trick is making sure each answer still gets its own random draws.
 
-Prefix caching saves work. I wanted a way to tell if it had also changed the experiment. This project gives each path its own draws, then checks the token choices against a reference. Whether it uses less time or memory is a separate test.
+I built a check that gives each path its own draws and compares the token choices against a reference. Whether that takes less time or memory is a separate test.
 
-**Enough buzzwords. Here are the receipts.** All **12,288 token decisions** matched in the tested matrix. On one RTX 5060 Ti, a selected Qwen workload ran at **2.04×** the baseline speed with **46.7% less peak allocated GPU memory**. A decode-heavy Phi run still saved **28.2%** of that memory but took **about 70% longer**. Same question, different workload, different answer.
+<p>
+  <a href="https://betobraga.github.io/stochastic-provenance/stochastic-provenance-preprint.pdf"><img src="assets/88x31-paper.svg" width="88" height="31" alt="Read the preprint PDF"></a>
+  <a href="https://github.com/BetoBraga/stochastic-provenance#03--run-in-under-a-minute"><img src="assets/88x31-demo.svg" width="88" height="31" alt="Run the CPU demo"></a>
+  <a href="https://github.com/BetoBraga/stochastic-provenance"><img src="assets/88x31-code.svg" width="88" height="31" alt="View the source code"></a>
+</p>
 
-**[Read the study](https://betobraga.github.io/stochastic-provenance/)** · [Run the CPU demo](https://github.com/BetoBraga/stochastic-provenance#03--run-in-under-a-minute) · [Check the evidence](https://github.com/BetoBraga/stochastic-provenance/blob/main/docs/evidence.md)
+[Open the research site and compare the results ↗](https://betobraga.github.io/stochastic-provenance/)
 
-### More things you can try
+**Enough buzzwords. Here are the receipts.** All **12,288 token decisions** matched in the tested matrix. On an RTX 5060 Ti, one Qwen workload ran at **2.04×** baseline speed and used **46.7% less peak allocated GPU memory**. A decode-heavy Phi case used **28.2% less** of that memory but ran at **0.59×** baseline speed. [Inspect the evidence](https://github.com/BetoBraga/stochastic-provenance/blob/main/docs/evidence.md).
 
-| Project | Question it tests | Start here |
+<details>
+<summary><strong>Open the test log: what matched?</strong></summary>
+
+192 of 192 trajectories matched across three models and two numerical policies. Each reference pair got the same path-local draws. These are controlled tests, not a claim about every model, workload, or device.
+
+</details>
+
+## Project index
+
+| File | Question it tests | Open |
 | :-- | :-- | :-- |
 | Workflow Replay Lab | When a document is delivered twice, does it create two records? | [Replay a case](https://betobraga.github.io/workflow-replay-lab/) |
 | ContinualKit | Did a model update break a task the old version could do? | [See the evaluation toolkit](https://github.com/BetoBraga/continualkit) |
+
+<details>
+<summary><strong>Open a failure case: the write succeeded but the reply never arrived</strong></summary>
+
+In the Replay Lab, choose **Interrupt after durable write**, reload, and run **Interrupted delivery replay**. The second event should leave the original record alone. The demonstration stores fictional data in this browser, not in an external system.
+
+</details>
+
+## Field notes
 
 <details>
 <summary><strong>What would make me hold a release?</strong></summary>
