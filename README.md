@@ -10,6 +10,8 @@ I’m an Applied AI & Automation Engineer at Cubic³. I work on LLM evaluation a
   <img alt="Conceptual illustration: an update can preserve some behavior while changing other behavior. Not benchmark data." src="./assets/model-change-light.svg">
 </picture>
 
+**[Run the Workflow Replay Lab](https://betobraga.github.io/workflow-replay-lab/)**: replay a duplicate delivery and inspect why the workflow writes, skips, or asks for review. Four fictional cases; no account required.
+
 ### Start here
 
 **[ContinualKit](https://github.com/BetoBraga/continualkit)**<br>
