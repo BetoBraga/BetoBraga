@@ -5,7 +5,7 @@
 ## Select a file
 
 <p>
-  <a href="https://betobraga.github.io/stochastic-provenance/"><img src="assets/window-stochastic.svg" width="900" alt="Open Stochastic Provenance: 12,288 of 12,288 token decisions matched in tests. One Qwen case reached 2.04 times baseline speed; a decode-heavy Phi case reached 0.59 times."></a>
+  <a href="https://betobraga.github.io/stochastic-provenance/"><img src="assets/file-stochastic.svg" width="900" alt="Open Stochastic Provenance: 12,288 of 12,288 token decisions matched in tests. One Qwen case reached 2.04 times baseline speed; a decode-heavy Phi case reached 0.59 times."></a>
 </p>
 
 <p align="center">
@@ -15,19 +15,19 @@
 </p>
 
 <p>
-  <a href="https://betobraga.github.io/workflow-replay-lab/"><img src="assets/window-replay.svg" width="900" alt="Open Workflow Replay Lab: replay a write that lost its reply."></a>
+  <a href="https://betobraga.github.io/workflow-replay-lab/"><img src="assets/file-replay.svg" width="900" alt="Open Workflow Replay Lab: replay a write that lost its reply."></a>
 </p>
 
 <p>
-  <a href="https://github.com/BetoBraga/continualkit"><img src="assets/window-continual.svg" width="900" alt="Open ContinualKit: check what broke after a model update."></a>
+  <a href="https://github.com/BetoBraga/continualkit"><img src="assets/file-continual.svg" width="900" alt="Open ContinualKit: check what broke after a model update."></a>
 </p>
 
 <p>
-  <a href="https://github.com/BetoBraga/eagle-eye/tree/main/demo"><img src="assets/window-eagle.svg" width="900" alt="Open EagleEye demo files: inspect and annotate detections."></a>
+  <a href="https://github.com/BetoBraga/eagle-eye/tree/main/demo"><img src="assets/file-eagle.svg" width="900" alt="Open EagleEye demo files: inspect and annotate detections."></a>
 </p>
 
 <p>
-  <a href="https://borerto.com/"><img src="assets/window-portfolio.svg" width="900" alt="Open Roberto Braga's portfolio and contact links."></a>
+  <a href="https://borerto.com/"><img src="assets/file-portfolio.svg" width="900" alt="Open Roberto Braga's portfolio and contact links."></a>
 </p>
 
 <details>
