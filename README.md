@@ -21,6 +21,18 @@ A better average can hide a task that used to work. A convincing answer can poin
 
 ## Selected work
 
+### Stochastic Provenance
+
+If a model reads the same prompt 32 times to give you 32 answers, which work can you skip? You can read the prompt once. The harder part is making sure each answer still gets its own random draws.
+
+Prefix caching saves work. I wanted a way to know it hadn't changed the experiment. So I built a check that gives each path its own draws and replays them against a reference. Same token choices? Good. Lower GPU cost? That's a separate test.
+
+**Enough buzzwords. Here are the receipts.** All **12,288 token decisions** matched in the semantic tests. One Qwen workload ran **2.04× faster** and used **46.7% less peak allocated GPU memory** on an RTX 5060 Ti. A decode-heavy Phi run saved **28.2%** of that memory and still took **about 70% longer**. That's why I measure both.
+
+**[Run the CPU demo](https://github.com/BetoBraga/stochastic-provenance#03--run-in-under-a-minute)** · [See how the numbers were measured](https://github.com/BetoBraga/stochastic-provenance/blob/main/docs/evidence.md)
+
+### Other things you can try
+
 - **[Workflow Replay Lab](https://betobraga.github.io/workflow-replay-lab/):** four fictional document deliveries. Inspect why the workflow writes, skips, or asks for review.
 - **[ContinualKit](https://github.com/BetoBraga/continualkit):** an early toolkit for measuring what a model forgets after an update. See the [critical-task gate in review](https://github.com/BetoBraga/continualkit/pull/8).
 
