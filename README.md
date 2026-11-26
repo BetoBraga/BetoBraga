@@ -1,34 +1,31 @@
 # Roberto Braga
 
-Applied AI & Automation Engineer at Cubic³, based in Brazil. I build workflows that can explain **why they acted, why they stopped, and what a person should review**. My research asks a related question: what does a model forget after an update?
+Applied AI & Automation Engineer at Cubic³. I build software for people who work across time zones, teams, and systems that do not always agree.
 
-## Workflow Replay Lab
+## Leave the decision with the person.
 
-A document arrives twice. Should the second delivery write another record? The lab lets you replay both events against the same ledger and inspect the reason for each decision.
+A meeting moves. A focus block disappears. The person who notices usually has to repair the day by hand. I started with something smaller: getting two clocks to agree on one instant.
 
-<img src="./assets/replay-spread.svg" width="816" alt="Replay trace for document A: its first delivery writes a record; a retry skips the write and leaves the ledger unchanged.">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/jeremias-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/jeremias-light.svg">
+  <img width="800" alt="Jeremias Clock. On November 25 at 16:00 UTC, São Paulo shows 13:00 and Dublin shows 16:00." src="assets/jeremias-dark.svg">
+</picture>
 
-**[Run the replay →](https://betobraga.github.io/workflow-replay-lab/)** · [Inspect the source and tests](https://github.com/BetoBraga/workflow-replay-lab)
+[![Windows validation on main](https://github.com/BetoBraga/jeremias-clock/actions/workflows/validate.yml/badge.svg?branch=main&event=push)](https://github.com/BetoBraga/jeremias-clock/actions/workflows/validate.yml?query=branch%3Amain)
+[![Stage: public preview](https://img.shields.io/badge/stage-public%20preview-365477?style=flat-square&labelColor=202f44)](https://github.com/BetoBraga/jeremias-clock#quick-start)
 
-<details>
-<summary>Inside the experiment: four fictional cases</summary>
+**[Try Jeremias on Windows →](https://github.com/BetoBraga/jeremias-clock#quick-start)** · [Follow the integration roadmap](https://github.com/BetoBraga/jeremias-clock/issues/11)
 
-The first delivery writes a record; the retry skips it. A missing piece of evidence and an unreadable PDF each route to human review. The ledger lives in memory: no uploads, API key, real document parsing, or enterprise integrations.
+**What works today:** an offline desktop clock for São Paulo and Dublin. It handles daylight saving and lets you preview another time without changing the system clock.
 
-</details>
+**What I’m testing next:** a companion that can notice a scheduling conflict and draft a brief from notes you select. The goal is to show what it can access before it runs, explain what it found, and leave any calendar change for a person to approve. Calendar and agent integrations are not generally available.
 
-## Two more questions from my work
+**[Bring a scheduling edge case](https://github.com/BetoBraga/jeremias-clock/issues/11).** Start with a fictional meeting: what changed, what should the clock show, and when should the companion stay quiet?
 
-**[ContinualKit](https://github.com/BetoBraga/continualkit) · What changed after training?**
+## Other experiments
 
-An early-stage Python toolkit for measuring mean forgetting across tasks. An overall score can hide a regression on a task the model used to handle.
+- **[ContinualKit](https://github.com/BetoBraga/continualkit):** what did the model forget after an update? An early tool for comparing task-level regressions.
+- **[Workflow Replay Lab](https://betobraga.github.io/workflow-replay-lab/):** see why a workflow writes, skips, or asks for review across four fictional cases.
 
-**[EagleEye](https://github.com/BetoBraga/eagle-eye) · What did the detector see?**
-
-A Streamlit and Detectron2 app for inspecting model output, annotating images, and exporting annotations.
-
----
-
-**Have a replay case?** [Suggest one](https://github.com/BetoBraga/workflow-replay-lab/issues) with a fictional input and the decision you would expect. A revised document that looks like a duplicate is a good place to start.
-
-[Portfolio & background ↗](https://borerto.com/)
+[borerto.com](https://borerto.com/)
