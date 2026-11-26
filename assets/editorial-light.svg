@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="340" viewBox="0 0 1120 340" role="img" aria-labelledby="title desc">
+<title id="title">After the Update — Field notes by Roberto Braga</title>
+<desc id="desc">Editorial masthead with two conceptual traces that diverge at the model update. No measurement data.</desc>
+<defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#c0a99b" opacity=".46"/></pattern><linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#f8f2e8"/></linearGradient></defs>
+<rect x="1" y="1" width="1118" height="338" rx="12" fill="url(#paper)" stroke="#c0a99b" stroke-width="2"/>
+<path d="M22 52V22h30m1046 30V22h-30M22 288v30h30m1046-30v30h-30" fill="none" stroke="#825400" stroke-width="2"/>
+<path d="M53 78H1067M53 266H1067M577 94V248" stroke="#c0a99b"/>
+<g fill="#654f43" font-family="DejaVu Sans Mono,monospace" font-weight="600" font-size="14" letter-spacing="1.8">
+<text x="54" y="57">RB / FIELD NOTES</text><text x="1066" y="57" text-anchor="end">01 / SANTOS, BR</text>
+<text x="53" y="298">APPLIED AI / SYSTEM RELIABILITY</text><text x="1067" y="298" text-anchor="end">CONCEPTUAL TRACE / NO BENCHMARK DATA</text>
+</g>
+<g font-family="Georgia,DejaVu Serif,serif" font-weight="600" letter-spacing="-2.5">
+<text x="53" y="166" fill="#291e19" font-size="80">After the</text>
+<text x="52" y="239" fill="#825400" font-size="83" font-style="italic">update.</text>
+</g>
+<rect x="608" y="105" width="458" height="126" fill="#fffaf0" stroke="#c0a99b"/>
+<rect x="608" y="105" width="458" height="126" fill="url(#grid)"/>
+<rect x="815" y="105" width="38" height="126" fill="#eee1d5" opacity=".9"/>
+<path d="M834 105V231" stroke="#654f43" opacity=".8" stroke-dasharray="3 6"/>
+<path d="M628 190c32-1 43-33 72-34s37 13 63 12 45-20 71-21 41-18 70-19 42 9 65 9 46-14 77-14" fill="none" stroke="#825400" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M834 147c21-1 45 39 73 38s43-13 66-10 49 22 73 23" fill="none" stroke="#6a4789" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="8 7"/>
+<circle cx="834" cy="147" r="5" fill="#f8f2e8" stroke="#291e19" stroke-width="2"/>
+<text x="834" y="98" fill="#654f43" text-anchor="middle" font-family="DejaVu Sans Mono,monospace" font-size="12" letter-spacing="1">UPDATE</text>
+<path d="M608 249h23" stroke="#825400" stroke-width="3"/><text x="638" y="253" fill="#654f43" font-family="DejaVu Sans Mono,monospace" font-size="12" letter-spacing="1">RETAINED</text>
+<path d="M767 249h23" stroke="#6a4789" stroke-width="3" stroke-dasharray="5 4"/><text x="797" y="253" fill="#654f43" font-family="DejaVu Sans Mono,monospace" font-size="12" letter-spacing="1">CHANGED</text>
+</svg>

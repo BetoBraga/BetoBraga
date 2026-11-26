@@ -1,23 +1,34 @@
 # Roberto Braga
 
-## What changes when the model changes?
-
-I’m an Applied AI & Automation Engineer at Cubic³. I work on LLM evaluation and service automation, where retries, missing evidence, and human review shape what a workflow can reliably do.
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/model-change-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/model-change-light.svg">
-  <img alt="Conceptual illustration: an update can preserve some behavior while changing other behavior. Not benchmark data." src="./assets/model-change-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/editorial-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/editorial-light.svg">
+  <img alt="After the Update. Field notes by Roberto Braga. Conceptual traces for retained and changed behavior." src="./assets/editorial-light.svg">
 </picture>
 
-**[Run the Workflow Replay Lab](https://betobraga.github.io/workflow-replay-lab/)**: replay a duplicate delivery and inspect why the workflow writes, skips, or asks for review. Four fictional cases; no account required.
+## I build AI systems for the moments when the happy path ends.
 
-### Start here
+I'm an Applied AI & Automation Engineer at Cubic³, based in Brazil. I work across LLM evaluation and service automation. The question I keep coming back to: **what changes when the model changes?**
 
-**[ContinualKit](https://github.com/BetoBraga/continualkit)**<br>
-What does a model retain after an update? An early-stage toolkit for exploring continual learning and regression in LLMs.
+A score should tell you what broke. A workflow should tell you why it declined to act. I build small, inspectable experiments around both.
 
-**[EagleEye](https://github.com/BetoBraga/eagle-eye)**<br>
-A Streamlit app that uses Detectron2 to annotate images and export the result.
+### 01 / Run the field note
 
-[borerto.com](https://borerto.com/)
+**[Open the Workflow Replay Lab →](https://betobraga.github.io/workflow-replay-lab/)**
+
+Same document, new delivery. Replay four fictional events and inspect why the flow writes, skips, or routes to a human. No account or API key. [Read the source and tests](https://github.com/BetoBraga/workflow-replay-lab).
+
+### 02 / Explore the work
+
+| Project | Question | What you can inspect |
+| --- | --- | --- |
+| **[ContinualKit](https://github.com/BetoBraga/continualkit)** | What knowledge did an update leave behind? | An early-stage Python toolkit with a metric for mean forgetting across tasks. |
+| **[EagleEye](https://github.com/BetoBraga/eagle-eye)** | How can a person inspect a model's visual prediction? | A small Streamlit and Detectron2 app that annotates images and exports the result. |
+
+### 03 / Bring a case that breaks the rule
+
+A new revision mistaken for a duplicate. A source that looks convincing but doesn't support the claim. An average score that hides a broken task.
+
+[Propose a fictional replay case](https://github.com/BetoBraga/workflow-replay-lab/issues) with the smallest input that reproduces it and the decision you expect.
+
+**[borerto.com ↗](https://borerto.com/)**
