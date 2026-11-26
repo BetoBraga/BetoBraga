@@ -1,31 +1,29 @@
 # Roberto Braga
 
-Applied AI & Automation Engineer at Cubic³. I build software for people who work across time zones, teams, and systems that do not always agree.
+Applied AI & Automation Engineer at Cubic³. I work on model evaluation and service automation.
 
-## Leave the decision with the person.
+## Good software gives people a way to disagree.
 
-A meeting moves. A focus block disappears. The person who notices usually has to repair the day by hand. I started with something smaller: getting two clocks to agree on one instant.
+The interesting part starts after a model gives an answer. Someone has to work out what to trust, what to try again, and when to stop. I build from that moment backward: make the evidence visible, test what can change, and leave the person using the system a way to intervene.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/jeremias-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/jeremias-light.svg">
-  <img width="800" alt="Jeremias Clock. On November 25 at 16:00 UTC, São Paulo shows 13:00 and Dublin shows 16:00." src="assets/jeremias-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/decision-design-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/decision-design-light.svg">
+  <img width="800" alt="A decision is a handoff. Propose: what is it suggesting? Check: what supports it? Decide: who can say no?" src="assets/decision-design-dark.svg">
 </picture>
 
-[![Windows validation on main](https://github.com/BetoBraga/jeremias-clock/actions/workflows/validate.yml/badge.svg?branch=main&event=push)](https://github.com/BetoBraga/jeremias-clock/actions/workflows/validate.yml?query=branch%3Amain)
-[![Stage: public preview](https://img.shields.io/badge/stage-public%20preview-365477?style=flat-square&labelColor=202f44)](https://github.com/BetoBraga/jeremias-clock#quick-start)
+<details>
+<summary>What would make me hold a release?</summary>
 
-**[Try Jeremias on Windows →](https://github.com/BetoBraga/jeremias-clock#quick-start)** · [Follow the integration roadmap](https://github.com/BetoBraga/jeremias-clock/issues/11)
+A better average can hide a task that used to work. A convincing answer can point to a source that doesn't support it. A retry can quietly create a second record. Those are separate tests, and any one of them can be a reason to wait.
 
-**What works today:** an offline desktop clock for São Paulo and Dublin. It handles daylight saving and lets you preview another time without changing the system clock.
+</details>
 
-**What I’m testing next:** a companion that can notice a scheduling conflict and draft a brief from notes you select. The goal is to show what it can access before it runs, explain what it found, and leave any calendar change for a person to approve. Calendar and agent integrations are not generally available.
+## Selected work
 
-**[Bring a scheduling edge case](https://github.com/BetoBraga/jeremias-clock/issues/11).** Start with a fictional meeting: what changed, what should the clock show, and when should the companion stay quiet?
+- **[Workflow Replay Lab](https://betobraga.github.io/workflow-replay-lab/):** four fictional document deliveries. Inspect why the workflow writes, skips, or asks for review.
+- **[ContinualKit](https://github.com/BetoBraga/continualkit):** an early toolkit for measuring what a model forgets after an update. See the [critical-task gate in review](https://github.com/BetoBraga/continualkit/pull/8).
 
-## Other experiments
-
-- **[ContinualKit](https://github.com/BetoBraga/continualkit):** what did the model forget after an update? An early tool for comparing task-level regressions.
-- **[Workflow Replay Lab](https://betobraga.github.io/workflow-replay-lab/):** see why a workflow writes, skips, or asks for review across four fictional cases.
+**What would you make it fail on?** [Send a fictional test case](https://github.com/BetoBraga/workflow-replay-lab/issues) and say what the system should do instead.
 
 [borerto.com](https://borerto.com/)
