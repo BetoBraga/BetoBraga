@@ -1,20 +1,16 @@
 # Roberto Braga
 
-<img src="assets/rb-home.svg" width="900" alt="Roberto Braga's personal index. An indigo wireframe aperture beside the motto: Good software gives people a way to disagree.">
+<p>
+  <img src="assets/rb-home.svg" width="900" alt="Roberto Braga. Applied AI and automation, Brazil. Good software gives people a way to disagree.">
+</p>
 
 **Applied AI & Automation Engineer · Cubic³ · Brazil**
 
-[01 / Research](#research) · [02 / Project index](#project-index) · [03 / Field notes](#field-notes)
+## Select a file
 
-I build systems that leave people enough evidence to tell them they're wrong. In practice that means testing what changed, making retries inspectable, and leaving a way to stop when the evidence isn't there.
-
-## Research
-
-### Stochastic Provenance
-
-If a model reads the same prompt 32 times to give you 32 answers, which work can you skip? You can process the prompt once. The trick is making sure each answer still gets its own random draws.
-
-I built a check that gives each path its own draws and compares the token choices against a reference. Whether that takes less time or memory is a separate test.
+<p>
+  <a href="https://betobraga.github.io/stochastic-provenance/"><img src="assets/window-stochastic.svg" width="900" alt="Open Stochastic Provenance: 12,288 of 12,288 token decisions matched in tests. One Qwen case reached 2.04 times baseline speed; a decode-heavy Phi case reached 0.59 times."></a>
+</p>
 
 <p>
   <a href="https://betobraga.github.io/stochastic-provenance/stochastic-provenance-preprint.pdf"><img src="assets/88x31-paper.svg" width="88" height="31" alt="Read the preprint PDF"></a>
@@ -22,38 +18,30 @@ I built a check that gives each path its own draws and compares the token choice
   <a href="https://github.com/BetoBraga/stochastic-provenance"><img src="assets/88x31-code.svg" width="88" height="31" alt="View the source code"></a>
 </p>
 
-[Open the research site and compare the results ↗](https://betobraga.github.io/stochastic-provenance/)
-
-**Enough buzzwords. Here are the receipts.** All **12,288 token decisions** matched in the tested matrix. On an RTX 5060 Ti, one Qwen workload ran at **2.04×** baseline speed and used **46.7% less peak allocated GPU memory**. A decode-heavy Phi case used **28.2% less** of that memory but ran at **0.59×** baseline speed. [Inspect the evidence](https://github.com/BetoBraga/stochastic-provenance/blob/main/docs/evidence.md).
+<p>
+  <a href="https://betobraga.github.io/workflow-replay-lab/"><img src="assets/window-replay.svg" width="390" alt="Open Workflow Replay Lab: replay a write that lost its reply."></a>
+  <a href="https://github.com/BetoBraga/continualkit"><img src="assets/window-continual.svg" width="390" alt="Open ContinualKit: check what broke after a model update."></a>
+  <a href="https://github.com/BetoBraga/eagle-eye/tree/main/demo"><img src="assets/window-eagle.svg" width="390" alt="Open EagleEye demo files: inspect and annotate detections."></a>
+  <a href="https://borerto.com/"><img src="assets/window-portfolio.svg" width="390" alt="Open Roberto Braga's portfolio and contact links."></a>
+</p>
 
 <details>
-<summary><strong>Open the test log: what matched?</strong></summary>
+<summary><strong>+ Open experiment log</strong></summary>
 
-192 of 192 trajectories matched across three models and two numerical policies. Each reference pair got the same path-local draws. These are controlled tests, not a claim about every model, workload, or device.
+Stochastic Provenance reuses one processed prefix without sharing random draws across branches. The tests matched 192 trajectories and 12,288 token decisions across three models and two numerical policies. On an RTX 5060 Ti, one selected Qwen workload ran at 2.04× baseline speed and used 46.7% less peak allocated GPU memory. A decode-heavy Phi case saved 28.2% of that memory but ran at 0.59× baseline speed. These are workload-specific results. [Explore the comparison](https://betobraga.github.io/stochastic-provenance/#findings) · [Read the evidence notes](https://github.com/BetoBraga/stochastic-provenance/blob/main/docs/evidence.md)
 
 </details>
 
-## Project index
-
-| File | Question it tests | Open |
-| :-- | :-- | :-- |
-| Workflow Replay Lab | When a document is delivered twice, does it create two records? | [Replay a case](https://betobraga.github.io/workflow-replay-lab/) |
-| ContinualKit | Did a model update break a task the old version could do? | [See the evaluation toolkit](https://github.com/BetoBraga/continualkit) |
-
 <details>
-<summary><strong>Open a failure case: the write succeeded but the reply never arrived</strong></summary>
+<summary><strong>+ Try a failure case</strong></summary>
 
-In the Replay Lab, choose **Interrupt after durable write**, reload, and run **Interrupted delivery replay**. The second event should leave the original record alone. The demonstration stores fictional data in this browser, not in an external system.
+In [Replay Lab](https://betobraga.github.io/workflow-replay-lab/), choose **Interrupt after durable write**, reload, and run **Interrupted delivery replay**. Predict how many writes the second delivery makes before opening **Inspect assertions**. [Send me a fictional case I missed](https://github.com/BetoBraga/workflow-replay-lab/issues).
 
 </details>
 
-## Field notes
-
 <details>
-<summary><strong>What would make me hold a release?</strong></summary>
+<summary><strong>+ Live repository widget</strong></summary>
 
-A better average can hide a regression on a critical task. A fluent answer can cite a source that doesn't support it. A retry can quietly create a second record. Each needs its own test, and any one of them can be a reason to wait.
+<a href="https://github.com/BetoBraga/stochastic-provenance"><img src="https://github-readme-stats.vercel.app/api/pin/?username=BetoBraga&amp;repo=stochastic-provenance&amp;show_owner=false&amp;border_radius=2&amp;bg_color=15183B&amp;title_color=E5F788&amp;text_color=EDF0FF&amp;icon_color=FF9ADA&amp;border_color=747CC7" width="390" alt="Live GitHub Readme Stats card for the public Stochastic Provenance repository."></a>
 
 </details>
-
-**Give me a case I missed.** [Share a fictional input and what should happen next](https://github.com/BetoBraga/workflow-replay-lab/issues) · [Portfolio](https://borerto.com/)
