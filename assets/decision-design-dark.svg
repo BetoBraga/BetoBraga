@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="215" viewBox="0 0 800 215">
+<title>Three questions for decision-making software</title>
+<desc>What is the system suggesting? What supports it? Who can say no?</desc>
+<rect x="1" y="1" width="798" height="213" rx="16" fill="#0d1726" stroke="#365271"/>
+<g font-family="Consolas, monospace" font-weight="600" font-size="15" letter-spacing="1.7" fill="#aabfd9"><text x="30" y="43">A DECISION IS A HANDOFF</text></g>
+<path d="M30 58H770" stroke="#365271"/>
+<g transform="translate(30 80)"><rect width="244" height="105" rx="10" fill="#15253b" stroke="#365271"/><text x="15" y="29" font-family="Consolas, monospace" font-size="14" letter-spacing="1.7" fill="#9cc7ff">01 / PROPOSE</text><text x="15" y="65" font-family="Segoe UI, sans-serif" font-size="20" font-weight="650" fill="#eff5ff">What is it suggesting?</text><path d="M15 86h32" stroke="#9cc7ff" stroke-width="2" stroke-linecap="round"/></g>
+<g transform="translate(278 80)"><rect width="244" height="105" rx="10" fill="#15253b" stroke="#365271"/><text x="15" y="29" font-family="Consolas, monospace" font-size="14" letter-spacing="1.7" fill="#9cc7ff">02 / CHECK</text><text x="15" y="65" font-family="Segoe UI, sans-serif" font-size="20" font-weight="650" fill="#eff5ff">What supports it?</text><path d="M15 86h32" stroke="#9cc7ff" stroke-width="2" stroke-linecap="round"/></g>
+<g transform="translate(526 80)"><rect width="244" height="105" rx="10" fill="#15253b" stroke="#365271"/><text x="15" y="29" font-family="Consolas, monospace" font-size="14" letter-spacing="1.7" fill="#ffac85">03 / DECIDE</text><text x="15" y="65" font-family="Segoe UI, sans-serif" font-size="20" font-weight="650" fill="#eff5ff">Who can say no?</text><path d="M15 86h32" stroke="#ffac85" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="215" viewBox="0 0 800 215">
+<title>Three questions for decision-making software</title>
+<desc>What is the system suggesting? What supports it? Who can say no?</desc>
+<rect x="1" y="1" width="798" height="213" rx="16" fill="#eff5fc" stroke="#9cb4cf"/>
+<g font-family="Consolas, monospace" font-weight="600" font-size="15" letter-spacing="1.7" fill="#3f5977"><text x="30" y="43">A DECISION IS A HANDOFF</text></g>
+<path d="M30 58H770" stroke="#9cb4cf"/>
+<g transform="translate(30 80)"><rect width="244" height="105" rx="10" fill="#e0ebf9" stroke="#9cb4cf"/><text x="15" y="29" font-family="Consolas, monospace" font-size="14" letter-spacing="1.7" fill="#225a9f">01 / PROPOSE</text><text x="15" y="65" font-family="Segoe UI, sans-serif" font-size="20" font-weight="650" fill="#11253f">What is it suggesting?</text><path d="M15 86h32" stroke="#225a9f" stroke-width="2" stroke-linecap="round"/></g>
+<g transform="translate(278 80)"><rect width="244" height="105" rx="10" fill="#e0ebf9" stroke="#9cb4cf"/><text x="15" y="29" font-family="Consolas, monospace" font-size="14" letter-spacing="1.7" fill="#225a9f">02 / CHECK</text><text x="15" y="65" font-family="Segoe UI, sans-serif" font-size="20" font-weight="650" fill="#11253f">What supports it?</text><path d="M15 86h32" stroke="#225a9f" stroke-width="2" stroke-linecap="round"/></g>
+<g transform="translate(526 80)"><rect width="244" height="105" rx="10" fill="#e0ebf9" stroke="#9cb4cf"/><text x="15" y="29" font-family="Consolas, monospace" font-size="14" letter-spacing="1.7" fill="#9f4329">03 / DECIDE</text><text x="15" y="65" font-family="Segoe UI, sans-serif" font-size="20" font-weight="650" fill="#11253f">Who can say no?</text><path d="M15 86h32" stroke="#9f4329" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

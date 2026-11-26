@@ -1,34 +1,41 @@
 # Roberto Braga
 
-Applied AI & Automation Engineer at Cubic³, based in Brazil. I build workflows that can explain **why they acted, why they stopped, and what a person should review**. My research asks a related question: what does a model forget after an update?
+Applied AI & Automation Engineer at Cubic³. I work on model evaluation and service automation.
 
-## Workflow Replay Lab
+## Good software gives people a way to disagree.
 
-A document arrives twice. Should the second delivery write another record? The lab lets you replay both events against the same ledger and inspect the reason for each decision.
+The interesting part starts after a model gives an answer. Someone has to work out what to trust, what to try again, and when to stop. I build from that moment backward: make the evidence visible, test what can change, and leave the person using the system a way to intervene.
 
-<img src="./assets/replay-spread.svg" width="816" alt="Replay trace for document A: its first delivery writes a record; a retry skips the write and leaves the ledger unchanged.">
-
-**[Run the replay →](https://betobraga.github.io/workflow-replay-lab/)** · [Inspect the source and tests](https://github.com/BetoBraga/workflow-replay-lab)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/decision-design-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/decision-design-light.svg">
+  <img width="800" alt="A decision is a handoff. Propose: what is it suggesting? Check: what supports it? Decide: who can say no?" src="assets/decision-design-dark.svg">
+</picture>
 
 <details>
-<summary>Inside the experiment: four fictional cases</summary>
+<summary>What would make me hold a release?</summary>
 
-The first delivery writes a record; the retry skips it. A missing piece of evidence and an unreadable PDF each route to human review. The ledger lives in memory: no uploads, API key, real document parsing, or enterprise integrations.
+A better average can hide a task that used to work. A convincing answer can point to a source that doesn't support it. A retry can quietly create a second record. Those are separate tests, and any one of them can be a reason to wait.
 
 </details>
 
-## Two more questions from my work
+## Selected work
 
-**[ContinualKit](https://github.com/BetoBraga/continualkit) · What changed after training?**
+### Stochastic Provenance
 
-An early-stage Python toolkit for measuring mean forgetting across tasks. An overall score can hide a regression on a task the model used to handle.
+If a model reads the same prompt 32 times to give you 32 answers, which work can you skip? You can read the prompt once. The harder part is making sure each answer still gets its own random draws.
 
-**[EagleEye](https://github.com/BetoBraga/eagle-eye) · What did the detector see?**
+Prefix caching saves work. I wanted a way to know it hadn't changed the experiment. So I built a check that gives each path its own draws and replays them against a reference. Same token choices? Good. Lower GPU cost? That's a separate test.
 
-A Streamlit and Detectron2 app for inspecting model output, annotating images, and exporting annotations.
+**Enough buzzwords. Here are the receipts.** All **12,288 token decisions** matched in the semantic tests. One Qwen workload ran **2.04× faster** and used **46.7% less peak allocated GPU memory** on an RTX 5060 Ti. A decode-heavy Phi run saved **28.2%** of that memory and still took **about 70% longer**. That's why I measure both.
 
----
+**[Run the CPU demo](https://github.com/BetoBraga/stochastic-provenance#03--run-in-under-a-minute)** · [See how the numbers were measured](https://github.com/BetoBraga/stochastic-provenance/blob/main/docs/evidence.md)
 
-**Have a replay case?** [Suggest one](https://github.com/BetoBraga/workflow-replay-lab/issues) with a fictional input and the decision you would expect. A revised document that looks like a duplicate is a good place to start.
+### Other things you can try
 
-[Portfolio & background ↗](https://borerto.com/)
+- **[Workflow Replay Lab](https://betobraga.github.io/workflow-replay-lab/):** four fictional document deliveries. Inspect why the workflow writes, skips, or asks for review.
+- **[ContinualKit](https://github.com/BetoBraga/continualkit):** an early toolkit for measuring what a model forgets after an update. See the [critical-task gate in review](https://github.com/BetoBraga/continualkit/pull/8).
+
+**What would you make it fail on?** [Send a fictional test case](https://github.com/BetoBraga/workflow-replay-lab/issues) and say what the system should do instead.
+
+[borerto.com](https://borerto.com/)
