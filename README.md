@@ -1,58 +1,34 @@
 # Roberto Braga
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/flight-recorder-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/flight-recorder-light.svg">
-  <img src="./assets/flight-recorder-dark.svg" alt="After the Update: field notes on applied AI, evaluation and reliability. The traces are illustrations, not benchmark results." width="880">
-</picture>
+Applied AI & Automation Engineer at Cubic³, based in Brazil. I build workflows that can explain **why they acted, why they stopped, and what a person should review**. My research asks a related question: what does a model forget after an update?
 
-## I build AI systems for the moments when the happy path ends.
+## Workflow Replay Lab
 
-I'm an Applied AI & Automation Engineer at Cubic³, based in Brazil. I work on LLM evaluation and service automation. A score should tell you what broke. A workflow should tell you why it declined to act.
+A document arrives twice. Should the second delivery write another record? The lab lets you replay both events against the same ledger and inspect the reason for each decision.
 
-[Run the demo](#run-the-field-note) · [Selected projects](#selected-projects) · [Contribute a case](#contribute-a-case) · [borerto.com](https://borerto.com/)
+<img src="./assets/replay-spread.svg" width="816" alt="Replay trace for document A: its first delivery writes a record; a retry skips the write and leaves the ledger unchanged.">
 
-## Run the field note
-
-<a href="https://betobraga.github.io/workflow-replay-lab/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/replay-card-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/replay-card-light.svg">
-  <img src="./assets/replay-card-dark.svg" alt="Open the interactive Workflow Replay Lab" width="880">
-</picture>
-</a>
-
-Replay four fictional events and see why a workflow writes, skips, or routes to a human. No sign-in, API key, or uploads. [Run the demo](https://betobraga.github.io/workflow-replay-lab/) · [Read the source and tests](https://github.com/BetoBraga/workflow-replay-lab)
+**[Run the replay →](https://betobraga.github.io/workflow-replay-lab/)** · [Inspect the source and tests](https://github.com/BetoBraga/workflow-replay-lab)
 
 <details>
-<summary>What can I test in the demo?</summary>
+<summary>Inside the experiment: four fictional cases</summary>
 
-A first delivery, a retry, missing evidence, and an unreadable PDF. The demo simulates decisions with fictional data and an in-memory ledger. It does not parse real documents or connect to enterprise systems.
+The first delivery writes a record; the retry skips it. A missing piece of evidence and an unreadable PDF each route to human review. The ledger lives in memory: no uploads, API key, real document parsing, or enterprise integrations.
 
 </details>
 
-## Selected projects
+## Two more questions from my work
 
-<a href="https://github.com/BetoBraga/continualkit">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/continual-card-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/continual-card-light.svg">
-  <img src="./assets/continual-card-dark.svg" alt="Open ContinualKit, an early-stage model evaluation toolkit" width="880">
-</picture>
-</a>
+**[ContinualKit](https://github.com/BetoBraga/continualkit) · What changed after training?**
 
-**[ContinualKit](https://github.com/BetoBraga/continualkit).** What does a model forget after an update? An early-stage Python toolkit for measuring mean forgetting across tasks.
+An early-stage Python toolkit for measuring mean forgetting across tasks. An overall score can hide a regression on a task the model used to handle.
 
-<a href="https://github.com/BetoBraga/eagle-eye">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/eagle-card-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/eagle-card-light.svg">
-  <img src="./assets/eagle-card-dark.svg" alt="Open EagleEye, an image annotation app" width="880">
-</picture>
-</a>
+**[EagleEye](https://github.com/BetoBraga/eagle-eye) · What did the detector see?**
 
-**[EagleEye](https://github.com/BetoBraga/eagle-eye).** How can a person inspect a vision model's output? A Streamlit and Detectron2 app for image annotation and export.
+A Streamlit and Detectron2 app for inspecting model output, annotating images, and exporting annotations.
 
-## Contribute a case
+---
 
-Found an edge case worth testing? [Propose a fictional replay case](https://github.com/BetoBraga/workflow-replay-lab/issues) with the smallest input that reproduces it and the decision you'd expect. Start with a retry, a missing source, or a new revision that looks like a duplicate.
+**Have a replay case?** [Suggest one](https://github.com/BetoBraga/workflow-replay-lab/issues) with a fictional input and the decision you would expect. A revised document that looks like a duplicate is a good place to start.
+
+[Portfolio & background ↗](https://borerto.com/)

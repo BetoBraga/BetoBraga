@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="816" height="224" viewBox="0 0 816 224" role="img" aria-labelledby="title desc">
+<title id="title">One document, two deliveries</title><desc id="desc">The first delivery writes document A. A retry skips it. The ledger still has one record.</desc>
+<rect width="816" height="224" rx="12" fill="#0e1725"/>
+<g font-family="ui-monospace,Consolas,monospace">
+<text x="32" y="34" fill="#9eb3cc" font-size="16" letter-spacing="2">FIELD NOTE  /  01</text>
+<text x="784" y="34" fill="#9eb3cc" font-size="16" text-anchor="end">DOC : A</text>
+<path d="M32 52h752" stroke="#35475d"/>
+<path d="M398 70v112" stroke="#35475d" stroke-dasharray="3 6"/>
+<g fill="#a5b8d0" font-size="20"><text x="32" y="91">01 / DELIVERY</text><text x="429" y="91">02 / RETRY</text></g>
+<g font-family="Segoe UI,Arial,sans-serif" font-weight="650" font-size="50"><text x="29" y="151" fill="#9fc7ff">Write</text><text x="426" y="151" fill="#ffae77">Skip</text></g>
+<path d="M32 175h752" stroke="#35475d"/>
+<g fill="#cad7e7" font-size="19"><text x="32" y="204">Ledger: 0 → 1</text><text x="429" y="204">Ledger: 1 → 1</text></g>
+</g></svg>
