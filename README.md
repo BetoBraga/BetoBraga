@@ -1,41 +1,40 @@
 # Roberto Braga
 
-Applied AI & Automation Engineer at Cubic³. I work on model evaluation and service automation.
+**Applied AI & Automation Engineer · Cubic³ · Brazil**
 
-## Good software gives people a way to disagree.
+> Good software gives people a way to disagree.
 
-The interesting part starts after a model gives an answer. Someone has to work out what to trust, what to try again, and when to stop. I build from that moment backward: make the evidence visible, test what can change, and leave the person using the system a way to intervene.
+I work on model evaluation and service automation. What I want from an AI system is simple: show me what changed, give me something I can test, and let me stop it when the evidence isn't there.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/decision-design-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/decision-design-light.svg">
-  <img width="800" alt="A decision is a handoff. Propose: what is it suggesting? Check: what supports it? Decide: who can say no?" src="assets/decision-design-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/evidence-register-dark.svg">
+  <img width="920" src="assets/evidence-register-light.svg" alt="Stochastic Provenance evidence register: 12,288 of 12,288 matched token decisions in semantic tests; 2.04 times speedup in one Qwen case; 0.59 times in a decode-heavy Phi case.">
 </picture>
-
-<details>
-<summary>What would make me hold a release?</summary>
-
-A better average can hide a task that used to work. A convincing answer can point to a source that doesn't support it. A retry can quietly create a second record. Those are separate tests, and any one of them can be a reason to wait.
-
-</details>
 
 ## Selected work
 
 ### Stochastic Provenance
 
-If a model reads the same prompt 32 times to give you 32 answers, which work can you skip? You can read the prompt once. The harder part is making sure each answer still gets its own random draws.
+If a model reads the same prompt 32 times to give you 32 answers, which work can you skip? You can read it once. The trick is making sure each answer still gets its own random draws.
 
-Prefix caching saves work. I wanted a way to know it hadn't changed the experiment. So I built a check that gives each path its own draws and replays them against a reference. Same token choices? Good. Lower GPU cost? That's a separate test.
+Prefix caching saves work. I wanted a way to tell if it had also changed the experiment. This project gives each path its own draws, then checks the token choices against a reference. Whether it uses less time or memory is a separate test.
 
-**Enough buzzwords. Here are the receipts.** All **12,288 token decisions** matched in the semantic tests. One Qwen workload ran **2.04× faster** and used **46.7% less peak allocated GPU memory** on an RTX 5060 Ti. A decode-heavy Phi run saved **28.2%** of that memory and still took **about 70% longer**. That's why I measure both.
+**Enough buzzwords. Here are the receipts.** All **12,288 token decisions** matched in the tested matrix. On one RTX 5060 Ti, a selected Qwen workload ran at **2.04×** the baseline speed with **46.7% less peak allocated GPU memory**. A decode-heavy Phi run still saved **28.2%** of that memory but took **about 70% longer**. Same question, different workload, different answer.
 
-**[Run the CPU demo](https://github.com/BetoBraga/stochastic-provenance#03--run-in-under-a-minute)** · [See how the numbers were measured](https://github.com/BetoBraga/stochastic-provenance/blob/main/docs/evidence.md)
+**[Read the study](https://betobraga.github.io/stochastic-provenance/)** · [Run the CPU demo](https://github.com/BetoBraga/stochastic-provenance#03--run-in-under-a-minute) · [Check the evidence](https://github.com/BetoBraga/stochastic-provenance/blob/main/docs/evidence.md)
 
-### Other things you can try
+### More things you can try
 
-- **[Workflow Replay Lab](https://betobraga.github.io/workflow-replay-lab/):** four fictional document deliveries. Inspect why the workflow writes, skips, or asks for review.
-- **[ContinualKit](https://github.com/BetoBraga/continualkit):** an early toolkit for measuring what a model forgets after an update. See the [critical-task gate in review](https://github.com/BetoBraga/continualkit/pull/8).
+| Project | Question it tests | Start here |
+| :-- | :-- | :-- |
+| Workflow Replay Lab | When a document is delivered twice, does it create two records? | [Replay a case](https://betobraga.github.io/workflow-replay-lab/) |
+| ContinualKit | Did a model update break a task the old version could do? | [See the evaluation toolkit](https://github.com/BetoBraga/continualkit) |
 
-**What would you make it fail on?** [Send a fictional test case](https://github.com/BetoBraga/workflow-replay-lab/issues) and say what the system should do instead.
+<details>
+<summary><strong>What would make me hold a release?</strong></summary>
 
-[borerto.com](https://borerto.com/)
+A better average can hide a regression on a critical task. A fluent answer can cite a source that doesn't support it. A retry can quietly create a second record. Each needs its own test, and any one of them can be a reason to wait.
+
+</details>
+
+**Give me a case I missed.** [Share a fictional input and what should happen next](https://github.com/BetoBraga/workflow-replay-lab/issues) · [Portfolio](https://borerto.com/)
